@@ -25,17 +25,19 @@ def displayItems(stateList):
     for s in stateList:
         print("{:<10}{:<25}{:<20}{:<10}".format(s[0], s[1], s[2], s[3]))
 
+
 def createDict(stateList):
     stateDict = {}
     for s in stateList:
         stateDict[s[0]] = s[1:]
     return stateDict
 
+
 def outputFile(stateDict):
     with open('output.txt', 'w') as f:
         for key, value in stateDict.items():
             f.write(f'{value[0]},{value[1]},{value[2]}\n')
 
+
 stateDict = createDict(stateList)
 outputFile(stateDict)
-    
