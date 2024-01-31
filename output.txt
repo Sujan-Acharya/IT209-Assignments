@@ -1,0 +1,51 @@
+Alabama,Montgomery,4447100
+Alaska,Juneau,626932
+Arizona,Phoenix,5130632
+Arkansas,Little Rock,2673400
+California,Sacramento,33871648
+Colorado,Denver,4301261
+Connecticut,Hartford,3405565
+Delaware,Dover,783600
+District of Columbia,Washington,572059
+Florida,Tallahassee,15982378
+Georgia,Atlanta,8186453
+Hawaii,Honolulu,211537
+Idaho,Boise,1293953
+Illinois,Springfield,12419293
+Indiana,Indianapolis,6080485
+Iowa,Des Moines,2926324
+Kansas,Topeka,2688418
+Kentucky,Frankfort,4041769
+Louisiana,Baton Rouge,4468976
+Maine,Augusta,1274923
+Maryland,Annapolis,5296486
+Massachusetts,Boston,6349097
+Michigan,Lansing,9938444
+Minnesota,Saint Paul,4919479
+Mississippi,Jackson,2844658
+Missouri,Jefferson City,5595211
+Montana,Helena,902195
+Nebraska,Lincoln,1711263
+Nevada,Carson City,1998257
+New Hampshire,Concord,1235786
+New Jersey,Trenton,8414350
+New Mexico,Santa Fe,1819046
+New York,Albany,18976457
+North Carolina,Raleigh,8049313
+North Dakota,Bismarck,642200
+Ohio,Columbus,11353140
+Oklahoma,Oklahoma City,3450654
+Oregon,Salem,3421399
+Pennsylvania,Harrisburg,12281054
+Rhode Island,Providence,1048319
+South Carolina,Columbia,4012012
+South Dakota,Pierre,754844
+Tennessee,Nashville,5689283
+Texas,Austin,20851820
+Utah,Salt Lake City,2233169
+Vermont,Montpelier,608827
+Virginia,Richmond,7078515
+Washington,Olympia,5894121
+West Virginia,Charleston,1808344
+Wisconsin,Madison,5363675
+Wyoming,Cheyenne,493782
