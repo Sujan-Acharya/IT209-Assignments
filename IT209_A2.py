@@ -103,3 +103,40 @@ print('Class standing of ', s4.name, ' is now ', s4.classLevel())
 print('\nTrying to add bogus grade of "X" to ',
       s1.name, ' result: ', s1.addGrade('X', 3))
 print('\nEnd of A2 Student class demo')
+class Department:
+    univ_students = 0
+    avgGPA = 0.0
+
+    def __init__(self, d_code, d_name, capacity, minGPA):
+        self.d_code = d_code
+        self.d_name = d_name
+        self.capacity = capacity
+        self.minGPA = minGPA
+        self.studentRoster = []
+
+    def __str__(self):
+        return f"Department code = {self.d_code}, Department name = {self.d_name}, Capacity = {self.capacity}, Minimum GPA = {self.minGPA}"
+
+    def addStudent(self, student):
+        if student.gpa() < self.minGPA:
+            return False, "GPA too low"
+        if student.enrolled == 'n':
+            return False, "Student not enrolled"
+        if student in self.studentRoster:
+            return False, "Duplicate student"
+        if len(self.studentRoster) >= self.capacity:
+            return False, "Department at capacity"
+        
+        self.studentRoster.append(student)
+        Department.univ_students += 1
+        Department.avgGPA = (Department.avgGPA * (Department.univ_students - 1) + student.gpa()) / Department.univ_students
+        return True, "Student added successfully"
+
+    def isQualified(self, student):
+        if student.enrolled == 'n':
+            return False, "Student not enrolled"
+        return student.gpa() >= self.minGPA, "Student qualified" if student.gpa() >= self.minGPA else "GPA too low"
+
+    def listRoster(self):
+        for student in self.studentRoster:
+            print(student)
